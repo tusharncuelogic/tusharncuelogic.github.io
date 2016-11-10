@@ -1,7 +1,6 @@
 <html>
 <head>
 <script type="text/javascript" src="js/swfobject-2.2.min.js"></script>
-<script type="text/javascript" src="http://www.java.com/js/dtjava.js"></script>
 <script type="text/javascript" src="js/evercookie.js"></script>
 <title>evercookie - virtually irrevocable persistent cookies</title>
 </head>
@@ -13,14 +12,16 @@
     </embed>
 </object>
 
+ Testing Evercookie : New cookie value erwrwer
+    
 <script>
     var ec = new evercookie(); 
     
     // set a cookie "id" to "12345"
     // usage: ec.set(key, value)
-    ec.set("id", "12345");    
+    ec.set("id", "New cookie value");    
     // retrieve a cookie called "id" (simply)
-    ec.get("id", function(value) { alert("Cookie value is " + value) }); 
+    ec.get("id", function(value) { console.log("Cookie value is " + value) }); 
  
     // or use a more advanced callback function for getting our cookie
     // the cookie value is the first param
