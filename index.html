@@ -21,6 +21,7 @@
     //ec.set("id", "Tushar");
     $('#setCookie').click(function(){
         ec.set("id", $('#cookie_name').val());
+        ec.get("id", function(value) { console.log("Cookie value is " + value) });
     })
     ec.get("id", function(value) { console.log("Cookie value is " + value) });
 </script>
