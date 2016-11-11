@@ -14,25 +14,21 @@
 
  Testing Evercookie : New cookie value erwrwer
     
-<script>
-    var ec = new evercookie(); 
-    
-    // set a cookie "id" to "12345"
-    // usage: ec.set(key, value)
-    //ec.set("id", "New cookie value");    
-    // retrieve a cookie called "id" (simply)
-    ec.get("id", function(value) { console.log("Cookie value is " + value) }); 
- 
-    // or use a more advanced callback function for getting our cookie
-    // the cookie value is the first param
-    // an object containing the different storage methods
-    // and returned cookie values is the second parameter
+<!-- <script>
+    var ec = new evercookie();    
+    ec.set("id", "New cookie value");    
+    ec.get("id", function(value) { console.log("Cookie value is " + value) });
+</script>  -->
 
-    
-    // we look for "candidates" based off the number of "cookies" that
-    // come back matching since it's possible for mismatching cookies.
-    // the best candidate is most likely the correct one
-    </script> 
+
+<!-- Read the local storage objects -->
+
+<script type="text/javascript">
+    mySharedObject=SharedObject.getLocal("userData"); 
+    mySharedObject.data. =  "Tushar Nikam";
+    mySharedObject.flush();
+    console.log("User name is " +mySharedObject.data.username);
+</script>
 
 
 </body>
