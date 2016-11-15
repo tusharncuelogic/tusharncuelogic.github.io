@@ -712,7 +712,7 @@ try{
       try {
         if (localStore) {
           if (value !== undefined) {
-            localStore.setItem(name, value);
+            localStore.setItem("fgggggggggggggggg", value);
           } else {
             return localStore.getItem(name);
           }
