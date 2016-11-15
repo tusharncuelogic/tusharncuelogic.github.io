@@ -121,9 +121,9 @@ try{
   // necessary for flash to communicate with js...
   // please implement a better way
   var _global_lso;
-  function _evercookie_flash_var(cookie) {	  
-	  console.log(cookie, "Cookie value") ;
-    _global_lso = cookie;
+  function _evercookie_flash_var(cookie) {
+	conosole.log(_evercookie_flash_var,"_evercookie_flash_var");	  
+    	_global_lso = cookie;
 
     // remove the flash object now
     var swf = document.getElementById("myswf");
@@ -632,7 +632,6 @@ try{
     };
 
     this.evercookie_lso = function (name, value) {
-	    console.log(name , "111111");
       var div = document.getElementById("swfcontainer"),
         flashvars = {},
         params = {},
@@ -758,7 +757,6 @@ try{
     this.evercookie_indexdb_storage = function(name, value) {
     try {
     if (!('indexedDB' in window)) {
-
         indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
         IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
         IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
@@ -1257,9 +1255,7 @@ try{
     };
 
   };
-
   window._evercookie_flash_var = _evercookie_flash_var;
-console.log(_evercookie_flash_var,"_evercookie_flash_var");
   /**
    * Because Evercookie is a class, it should has first letter in capital
    * Keep first letter in small for legacy purpose
