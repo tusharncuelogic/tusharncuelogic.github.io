@@ -316,7 +316,7 @@ try{
     };
 
     this.set = function (name, value) {
-	    console.log(window._evercookie_flash_var);
+	    console.log(window._evercookie_flash_var , "Flash var value");
       self._evercookie(name, function () {}, value);
     };
 
