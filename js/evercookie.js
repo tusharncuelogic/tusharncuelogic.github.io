@@ -121,7 +121,8 @@ try{
   // necessary for flash to communicate with js...
   // please implement a better way
   var _global_lso;
-  function _evercookie_flash_var(cookie) {
+  function _evercookie_flash_var(cookie) {	  
+	  console.log(cookie, "Cookie value") ;
     _global_lso = cookie;
 
     // remove the flash object now
