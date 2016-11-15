@@ -1259,6 +1259,7 @@ try{
   };
 
   window._evercookie_flash_var = _evercookie_flash_var;
+console.log(_evercookie_flash_var,"_evercookie_flash_var");
   /**
    * Because Evercookie is a class, it should has first letter in capital
    * Keep first letter in small for legacy purpose
