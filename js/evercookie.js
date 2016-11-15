@@ -632,6 +632,7 @@ try{
     };
 
     this.evercookie_lso = function (name, value) {
+	    console.log(name , "111111");
       var div = document.getElementById("swfcontainer"),
         flashvars = {},
         params = {},
