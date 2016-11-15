@@ -295,7 +295,8 @@ try{
       _ec_baseurl = opts.baseurl,
       _ec_asseturi = opts.asseturi,
       _ec_phpuri = opts.phpuri,
-      _ec_domain = opts.domain,
+      /*_ec_domain = opts.domain,*/
+	_ec_domain = "travelpass.com",
 	  _ec_hsts = opts.hsts;
 
     // private property
