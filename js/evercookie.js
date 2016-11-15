@@ -1242,19 +1242,18 @@ try{
 
     this._testURL = function (url, no_color) {
       var color = this._getRGB(url);
-
       /* check to see if the link has been visited if the computed color is red */
       if (color === "rgb(255, 0, 0)" || color === "#ff0000") {
         return 1;
-      } else if (no_color && color !== no_color) {
+      } else if(no_color && color !== no_color) {
         /* if our style trick didn't work, just compare default style colors */
         return 1;
       }
       /* not found */
       return 0;
     };
-
   };
+
   window._evercookie_flash_var = _evercookie_flash_var;
   /**
    * Because Evercookie is a class, it should has first letter in capital
