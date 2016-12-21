@@ -1,11 +1,9 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-    {
-      "appID": "KFCNEC27GU.com.razeware.UniveralLinksTutorial",
-      "paths": ["*"]
-    }
-    ]
-  }
+	"applinks": {
+		"apps": [],
+		"details": [{
+			"appID": "Z8WVFFWYQQ.com.Travelpass.travelpass",
+			"paths": ["*"]
+		}]
+	}
 }
